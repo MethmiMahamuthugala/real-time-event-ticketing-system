@@ -1,0 +1,13 @@
+# Node.js
+node_modules/
+.env
+
+# Vite
+dist/
+
+# Java
+*.class
+*.jar
+
+# Misc
+.DS_Store

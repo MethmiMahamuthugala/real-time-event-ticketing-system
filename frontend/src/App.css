@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f8fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Enable Flexbox for the body */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
+  text-align: center;
+}
+
+h1 {
+  color: #000;
+  margin-top: 0;
+  white-space: nowrap; /* Prevents line breaks */
+  font-size: 2rem; /* Adjust the font size to fit in one line */
+  overflow: hidden; /* Ensures no accidental overflow */
+  text-overflow: ellipsis; /* Optional: Adds ellipsis if text is too long */
+}
+
+.App {
+  max-width: 600px;
+  width: 100%; /* Ensure it doesn't overflow on small screens */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+
+.config-section h2 {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+  width: 100%;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #2d85f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:disabled {
+  background-color: #999;
+}
+
+button:hover:not(:disabled) {
+  background-color: #1a65c0;
+}
+
+.logs-section {
+  margin-top: 30px;
+}
+
+.logs-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.logs-section li {
+  padding: 5px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+}
+
+strong {
+  font-weight: bold;
+}
+
+form input,
+form button {
+  text-align: center;
+}
